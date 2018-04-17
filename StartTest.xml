@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" data-provider-thread-count="1">
+	<!-- data-provider-thread-count 数值必须小于设备个数 -->
+	<listeners>
+		<listener class-name="com.xiaoM.Report.utils.TestListener" />
+		<listener class-name="com.xiaoM.Report.utils.TestReport" />
+	</listeners>
+	<test name="TestCase">
+		<classes>
+			<class name="com.xiaoM.BeginScript.BeginScript" />
+		</classes>
+	</test>
+</suite>
